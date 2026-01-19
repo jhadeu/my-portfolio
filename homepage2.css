@@ -1,0 +1,236 @@
+@font-face {
+  font-family: cutesy;
+  src: url(../fonts/cutesy.TTF);
+}
+
+@font-face {
+  font-family: dogica;
+  src: url(../fonts/dogica.ttf);
+}
+
+@font-face {
+  font-family: alagard;
+  src: url(../fonts/alagard.ttf);
+}
+
+@font-face {
+  font-family: rainyhearts;
+  src: url(../fonts/rainyhearts.ttf);
+}
+
+@font-face {
+  font-family: Minecraft;
+  src: url(../fonts/Minecraft.ttf);
+}
+
+@font-face {
+  font-family: Daydream;
+  src: url(../fonts/Daydream.otf);
+}
+
+@font-face {
+  font-family: bubbly;
+  src: url(../fonts/bubbly.TTF);
+}
+
+*,
+*::before,
+*::after,
+a,
+a:hover,
+a:active,
+button,
+button:hover,
+button:active,
+input,
+input:hover,
+input:active,
+textarea,
+textarea:hover,
+textarea:active {
+  cursor: url('../cursor/white.cur'), auto !important;
+}
+
+body {
+margin: 0;
+background-image: url('../pictures/bg-desktop.gif');
+background-size: cover;
+font-family: rainyhearts;
+overflow: hidden;
+}
+
+
+/* Desktop Icons */
+.desktop-icon {
+position: absolute;
+width: 80px;
+text-align: center;
+cursor: pointer;
+user-select: none;
+}
+.desktop-icon img {
+width: 80px;
+height: 80px;
+border-radius: 10px;
+}
+.desktop-icon p {
+font-size: 12px;
+margin-top: 5px;
+}
+
+
+/* Window Style */
+.window {
+position: absolute;
+width: 380px;
+background: RGB(253, 238, 244);
+border: 2px solid RGB(245, 172, 196);
+border-radius: 8px;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+display: none;
+top: 50px;
+left: 220px;
+}
+
+
+.window.open {
+display: block;
+}
+
+
+.window-header {
+padding: 8px 12px;
+background: RGB(253, 218, 238);
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: 2px solid RGB(245, 172, 196);
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 8px 8px 0 0;
+cursor: grab;
+}
+
+p {
+  margin: 10px;
+  padding: 0;
+}
+
+h3 {
+  margin: 10px;
+  padding: 0;
+  color: #f580a7;
+}
+
+#window-mydigitalself.active {
+  display: block;
+  z-index: 100;
+  width: 250px;
+}
+
+#window-mydigitalself {
+  top: 60px;
+  left: 950px;
+}
+
+label {
+  padding-right: 10px;
+  font-size: 1rem;
+}
+
+.windows-content {
+  align-items: center;
+}
+#file {
+  width: 50%;
+  height: 30px;
+}
+
+/* Styles pour la fenêtre Projets */
+#window-projects .window-content {
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: RGB(245, 172, 196) transparent;
+}
+
+.project {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid RGB(245, 172, 196);
+}
+
+.project:last-child {
+  border-bottom: none;
+}
+
+.project-icon {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 2px solid RGB(245, 172, 196);
+  border-radius: 8px;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f580a7;
+}
+
+.project-emoji {
+  font-size: 18px;
+}
+
+.project-subtitle {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.project-details {
+  color: #000;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+.project-details div {
+  margin-bottom: 5px;
+}
+
+.arrow {
+  color: #f580a7;
+  margin-right: 5px;
+}
+
+.highlight {
+  color: #555;
+}
+
+#window-projects .window-content {
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.project:last-child {
+  border-bottom: none;
+  margin-bottom: 0; 
+  padding-bottom: 10px; 
+}

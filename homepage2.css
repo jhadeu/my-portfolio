@@ -234,3 +234,96 @@ label {
   margin-bottom: 0; 
   padding-bottom: 10px; 
 }
+
+.projects-intro {
+  font-style: italic;
+  color: #f580a7;
+  margin: 0 0 12px 0;
+}
+
+.folder {
+  margin-bottom: 12px;
+  border: 2px solid RGB(245, 172, 196);
+  border-radius: 8px;
+  background: RGB(253, 238, 244);
+}
+
+.folder summary {
+  padding: 8px 12px;
+  background: RGB(253, 218, 238);
+  color: #f580a7;
+  font-weight: bold;
+  font-size: 16px;
+  list-style: none;          /* enlève la flèche par défaut */
+  border-radius: 6px;
+  user-select: none;
+}
+
+.folder summary::-webkit-details-marker { display: none; }
+
+.folder summary::after {
+  content: " ▸";
+  float: right;
+}
+
+.folder[open] summary::after {
+  content: " ▾";
+}
+
+.folder[open] summary {
+  border-bottom: 2px solid RGB(245, 172, 196);
+  border-radius: 6px 6px 0 0;
+}
+
+.folder .project {
+  margin: 0;
+  padding: 15px;
+}
+
+.project-window {
+  width: 400px; /* avant : 460px */
+}
+
+.project-window .window-content {
+  max-height: 400px; /* avant : 500px */
+  overflow-y: auto;
+  padding: 15px;
+  scrollbar-width: thin;
+  scrollbar-color: RGB(245, 172, 196) transparent;
+}
+
+/* Barre déroulante toujours visible pour Work projects */
+#window-school .window-content {
+  overflow-y: scroll;
+}
+
+.folder-icon img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.folder-icon p {
+  font-size: 12px; /* même taille que les icônes du bureau */
+}
+
+.folder-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* les deux icônes partent du même niveau en haut */
+  gap: 60px;
+  padding: 15px 0 5px;
+}
+
+.folder-icon {
+  width: 110px; /* même largeur pour les deux, quelle que soit la longueur du texte */
+  text-align: center;
+}
+
+.folder-icon img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain; /* évite que deux images de formats différents soient déformées */
+  margin: 0 auto;      /* centre l'image dans la colonne */
+}

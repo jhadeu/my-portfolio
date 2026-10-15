@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>jade's portfolio !!</title>
+  <link rel="icon" type="image/x-icon" href="/images/bow.ico">
   <link rel="stylesheet" href="homepage2.css" />   
 </head>
 <body>
-
 
   <div class="desktop-icon" style="top: 30px; left: 30px;" data-window="window-presentation">
     <img src="../pictures/livre-icon.png" />
@@ -27,15 +27,13 @@
 
 <div class="desktop-icon" style="top: 330px; left: 30px;" data-window="window-projects">
     <img src="../pictures/notes-icon.png" />
-    <p>Projets</p>
+    <p>Projects</p>
 </div>
 
 <div class="desktop-icon" style="top: 430px; left: 30px;" data-window="window-contact">
     <img src="../pictures/contact-icon.png" />
     <p>Contact</p>
 </div>
-
-
 
   <!-- Windows -->
   <div id="window-presentation" class="window">
@@ -46,7 +44,7 @@
       </div>
     </div>
     <div class="window-content">
-      <p>Hi! I'm Jade, a 21-year-old Master’s student in Culture and Web Professions at Gustave Eiffel University. Passionate about sociology, economics, and social communication, I also love exploring the creative side of digital work through graphic design, front-end development, and video editing. I’m excited to combine all these interests to build engaging and thoughtful digital projects.</p>
+      <p>Hi! I'm Jade, a 22-year-old Master’s student in Culture and Web Professions at Gustave Eiffel University. Passionate about sociology, economics, and social communication, I also love exploring the creative side of digital work through graphic design, front-end development, and video editing. I’m excited to combine all these interests to build engaging and thoughtful digital projects.</p>
       <p>Beyond school, I spend a lot of time swimming, writing, and exploring new ideas through code. These passions keep me motivated and grounded. I also find most of my inspiration on Pinterest, a place where I collect visuals, moods, and concepts that spark my creativity.</p>
     <h3>← Click on the icons to know more !!</h3>
     </div>
@@ -95,19 +93,35 @@
 <div id="window-projects" class="window">
   <div class="window-header">
     <span><u>Projects</u></span>
-    <div class="window-controls">
-      <span class="close">×</span>
-    </div>
+    <div class="window-controls"><span class="close">×</span></div>
   </div>
   <div class="window-content">
-    
-    <!-- Project 1: Écobulle Workshops -->
+    <p class="projects-intro">Double click to open ↓</p>
+    <div class="folder-grid">
+      <div class="folder-icon" data-window="window-school" data-side="left">
+        <img src="../pictures/icon-work.png" alt="" />
+        <p>Work projects</p>
+      </div>
+      <div class="folder-icon" data-window="window-perso" data-side="right">
+        <img src="../pictures/icon-perso.png" alt="" />
+        <p>Personal projects</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work projects (s'ouvre à gauche) -->
+<div id="window-school" class="window project-window">
+  <div class="window-header">
+    <span><u>Work projects</u></span>
+    <div class="window-controls"><span class="close">×</span></div>
+  </div>
+  <div class="window-content">
+
     <div class="project">
       <img src="../pictures/écobulle.jpg" alt="Écobulle Workshops" class="project-icon">
       <div class="project-info">
-        <div class="project-title">
-          <span>Écobulle Workshops</span>
-        </div>
+        <div class="project-title"><span>Écobulle Workshops</span></div>
         <div class="project-subtitle">Natural & free cleaning products for students.</div>
         <div class="project-details">
           <div><span class="arrow">→</span><u>Fight against waste, Biocoop, workshop facilitation.</u></div>
@@ -116,13 +130,10 @@
       </div>
     </div>
 
-    <!-- Project 2: Sociology of Sex Work -->
     <div class="project">
       <img src="../pictures/sociology.jpg" alt="Sociology" class="project-icon">
       <div class="project-info">
-        <div class="project-title">
-          <span>Sociology of Sex Work</span>
-        </div>
+        <div class="project-title"><span>Sociology of Sex Work</span></div>
         <div class="project-subtitle">Research paper on mental workload.</div>
         <div class="project-details">
           <div><span class="arrow">→</span><u>Interviews, thematic analysis, collective writing.</u></div>
@@ -131,13 +142,10 @@
       </div>
     </div>
 
-    <!-- Project 3: Urban Vertical Farm -->
     <div class="project">
       <img src="../pictures/terreauciel.jpg" alt="TerreauCiel" class="project-icon">
       <div class="project-info">
-        <div class="project-title">
-          <span>Urban Vertical Farm</span>
-        </div>
+        <div class="project-title"><span>Urban Vertical Farm</span></div>
         <div class="project-subtitle">Project with SCOP TerreauCiel.</div>
         <div class="project-details">
           <div><span class="arrow">→</span><u>Research, professional exchange, adaptation in Tunisia.</u></div>
@@ -146,13 +154,10 @@
       </div>
     </div>
 
-    <!-- Project 4: Weather App -->
     <div class="project">
       <img src="../pictures/logo-weatherapp.png" alt="Weather App" class="project-icon">
       <div class="project-info">
-        <div class="project-title">
-          <span>Weather App</span>
-        </div>
+        <div class="project-title"><span>Weather App</span></div>
         <div class="project-subtitle">Logo design & visual identity for a weather app.</div>
         <div class="project-details">
           <div><span class="arrow">→</span><u>Logo created with Photoshop & Illustrator, interface via Figma.</u></div>
@@ -161,13 +166,34 @@
       </div>
     </div>
 
-    <!-- Project 5: Video Creation & Personal Coding -->
+  </div>
+</div>
+
+<!-- Personal projects (s'ouvre à droite) -->
+<div id="window-perso" class="window project-window">
+  <div class="window-header">
+    <span><u>Personal projects</u></span>
+    <div class="window-controls"><span class="close">×</span></div>
+  </div>
+  <div class="window-content">
+
+    <div class="project">
+      <img src="../pictures/screenshot-blog.png" alt="jade's blog" class="project-icon">
+      <div class="project-info">
+        <div class="project-title"><span>jade's blog !! 🧸</span></div>
+        <div class="project-subtitle">Personal website on Neocities, built to improve my HTML/CSS skills.</div>
+        <div class="project-details">
+          <div><span class="arrow">→</span><u>Customized layout, 6 pages, guestbook, functional widgets...</u></div>
+          <div><span class="highlight">Indie web culture, in-depth customization & regular updates.</span></div>
+          <div><a href="https://s0ft-rvge.neocities.org/" target="_blank" rel="noopener">→ visit the site</a></div>
+        </div>
+      </div>
+    </div>
+
     <div class="project">
       <img src="../pictures/code.jpg" alt="Video Creation" class="project-icon">
       <div class="project-info">
-        <div class="project-title">
-          <span>Video Creation & Personal Coding</span>
-        </div>
+        <div class="project-title"><span>Video Creation & Personal Coding</span></div>
         <div class="project-subtitle">Self-taught HTML/CSS through a personal website.</div>
         <div class="project-details">
           <div><span class="arrow">→</span><u>Edits on VideoStar (14-17 y/o), current vlogs on CapCut.</u></div>

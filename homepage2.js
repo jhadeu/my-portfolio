@@ -142,11 +142,3 @@ function addToTaskbar(name) {
     }
 });
 
-const myDigitalSelfWindow = document.getElementById('window-mydigitalself');
-if (myDigitalSelfWindow) {
-  myDigitalSelfWindow.classList.add('active');
-
-  myDigitalSelfWindow.addEventListener('click', (e) => {
-    e.stopPropagation();
-  });
-}
